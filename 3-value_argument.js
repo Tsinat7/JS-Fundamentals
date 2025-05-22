@@ -1,2 +1,6 @@
 const myArg = Process.argv[2];
-console.log(myArg !== undefined ? myArg : "No argument");
+if (myArg === undefined) {
+    console.log("No argument");
+} else {
+    console.log(myArg);
+}
